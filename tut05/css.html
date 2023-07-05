@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.html">
+    <!-- 1. 외부스타일시트(별도의 파일로 작업) : reset.css
+    2. 내부스타일시트(<style></style>) : 일반디자인
+    3. html 태그 안에 스타일(inline style sheet) : 특정한 곳을 디자인 -->
+    <style>
+        .box {
+            width: 500px;
+            height: 400px;
+        }
+
+        /* .clr1 {
+            background-color: #00f;
+        }
+
+        .clr2 {
+            background-color: #f0f;
+        } */
+
+        #title {
+            background-color: #f0f;
+        }
+
+        .title {
+            background-color: aqua;
+        }
+
+        h1 {
+            background-color: blueviolet;
+        }
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <div class="box clr1 kor" style="background-color: rgb(187, 255, 161);" >box1</div>
+    <div class="box clr2 eng" style="background-color: rgb(201, 201, 255);">box2</div>
+
+    <!-- id 이름 중복x -->
+    <h1 id="title">제목1</h1>
+
+    <!-- class 중복가능 -->
+    <h1 class="title">제목2</h1>
+    <h1>제목3</h1>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 태그 : 데이터를 전송해서 저장할 때</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(202, 202, 202);
+        }
+
+
+        /* div를 가로 세로 가운데정렬 */
+        .box {
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            border: 1px solid #757575;
+            
+            padding: 30px 20px;
+
+            width: 500px;
+        }
+
+        label {
+            /* inline 타입을 block 타입으로 바꾸기 */
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            box-shadow: 0px 1px 1px 1px #cecece;
+            padding: 8px 5px;
+            
+        }
+
+        ::placeholder {
+            font-size: 12px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전송방식 : method="get(post)" encType, action name id class>
+    중요 : post(보안, 글자길이제한x) 검색어 : get(속도빠름, 글자길이제한)
+    <form method="post" enctype="multipart/form-data" action="save.html" name="" class="" id="">
+        label : 제목
+        input : text, password, checkbox, radio, submit, file..
+        select : 선택박스
+        textarea : 대량의 텍스트
+        버튼 : <input=submit value=로그인>, <button type="submit">로그인</button>
+    </form> -->
+
+    <!-- 회원가입 폼 : 입력 -> 유효성 검사(valuedate) -> 서버전송 -> DB저장 -->
+    <!-- 아이디, 이름, 비밀번호 저장 -->
+    <div class="box">
+    <form method="post" enctype="multipart/form-data" action="저장할주소">
+        <label for="">Userid.</label>
+        <!-- required : 해당 칸을 클릭하면 검정색 테두리로 표시해줌, autocomplete : 입력된 값이 저장되지 않게 해줌 -->
+        <input type="text" autofocus required autocomplete="off" name="uid" class="" id="" placeholder="아이디입력하셈" /><br>
+
+        <label for="">Username.</label>
+        
+        <input type="text" autocomplete="off" name="uname" class="" id="" placeholder="이름입력하셈" /><br>
+
+        <label for="">UserPwd.</label>
+        <input type="password" required name="upwd" class="" id="" placeholder="비밀번호 입력하셈" /><br>
+
+        <input type="file" name="upload" class="" id="" />
+        
+        <!-- 회원가입 버튼 -->
+        <!-- <input type="submit" class="" id="" value="회원가입" /> -->
+        <button type="submit" class="" id="">Register</button>
+    </form>
+    </div>
+
+
+
+
+</body>
+</html>

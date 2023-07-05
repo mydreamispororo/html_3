@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Navigator Example</title>
+    <link rel="stylesheet" href="css/reset.css"> <!--css파일 연결-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <!-- 폰트
+    아이콘 설정
+    리셋 -->
+    
+
+</head>
+<body>
+    <div class="logo">
+        <a href="nav.html">
+            <img src="images/bill.jpg" alt="빌게이츠 로고 이미지">
+        </a>
+    </div>
+    <header>
+        <nav>
+            <div><i class="fa-solid fa-code"></i> Code</div>
+            <div><i class="fa-regular fa-circle"></i> Issues</div>
+            <div><i class="fa-solid fa-code-pull-request"></i> Pull Requests</div>
+                            
+        </nav>
+
+    </header>
+
+    <main>
+        <menu>
+            <!-- target="_blan" -> 새창으로 뜨게 만들어줌 -->
+            <span><i class="fa-solid fa-code"></i> <a href="http://www.naver.com" target="_blan">Code</a></span>
+            <span><i class="fa-regular fa-circle"></i> Issues</span>
+            <span><i class="fa-solid fa-code-pull-request"></i> Pull Requests</span>
+        </menu>
+    </main>
+
+    <section>
+        <p>
+            <form name="frm">
+                <input type="text" name="search" /> <button onclick="chkSearch()">검색</button>
+            </form>
+        </p>
+
+        <table>
+            <tr>
+                <td>No. </td>
+                <td>Subject</td>
+                <td>Writer</td>
+                <td>Content</td>
+                <td>Regdate</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>공지사항입니다.</td>
+                <td>관리자</td>
+                <td>공지사항 테스트입니다.</td>
+                <td>2023.05.11</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>게시판 테스트</td>
+                <td>홍길동</td>
+                <td>게시판 등록테스트입니다.</td>
+                <td>2023.05.10</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <script>
+
+
+    </script>
+ 
+
+
+</body>
+</html>

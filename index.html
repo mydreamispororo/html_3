@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록타입&인라인타입</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        div{
+            background-color: #000000;
+        }
+        span{
+            background-color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 사각형
+        1. 한줄을 다 차지하는 블록타입
+            - 한줄에 하나씩만 배치
+        2. 내용물 만큼만 차지하는 인라인
+            - 뒤에 있는 요소들과 나란히 배치
+        
+        span, a, img ... 제외하면 전부lock록타입 -->
+        <a href="http://www.naver.com">네이버</a>
+        <a href="http://www.daum.net">다음</a>
+        <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk">카카오</a>
+        <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk">카카오</a>
+        
+
+        <div>block1</div>
+        <div>block2</div>
+
+        고급형 디자인 적용하려면 : 변환
+        <span>inline 2</span>
+        <span>inline 2</span>
+
+
+</body>
+</html>
